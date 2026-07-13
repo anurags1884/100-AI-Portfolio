@@ -6,3 +6,7 @@ print(f"Version {VERSION}".center(60))
 print("=" * 60)
 
 print(MENU)
+
+choice = input("Enter your choice (0-7): ")
+
+print(f"\nYou selected option {choice}")
