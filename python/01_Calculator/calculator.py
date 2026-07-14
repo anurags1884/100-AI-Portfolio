@@ -155,6 +155,175 @@ while True:
         input("\nPress Enter to continue...")
         continue
 
+    # Logarithm (Base 10)
+    elif choice == "15":
+
+        try:
+            number = get_number("\nEnter Positive Number : ")
+
+            result = logarithm(number)
+
+            print("\n" + "=" * 40)
+            print(f"log₁₀({number}) = {result:.6f}")
+            print("=" * 40)
+
+            save_history(
+                "Logarithm",
+                f"log10({number})",
+                round(result, 6)
+            )
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+
+    # Natural Log
+    elif choice == "16":
+
+        try:
+            number = get_number("\nEnter Positive Number : ")
+
+            result = natural_log(number)
+
+            print("\n" + "=" * 40)
+            print(f"ln({number}) = {result:.6f}")
+            print("=" * 40)
+
+            save_history(
+                "Natural Log",
+                f"ln({number})",
+                round(result, 6)
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+
+    # Sine
+    elif choice == "17":
+
+        try:
+            angle = get_number("\nEnter Angle (Degrees) : ")
+
+            result = sine(angle)
+
+            print("\n" + "=" * 40)
+            print(f"sin({angle}°) = {result:.6f}")
+            print("=" * 40)
+
+            save_history(
+                "Sine",
+                f"sin({angle})",
+                round(result, 6)
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+
+    # Cosine
+    elif choice == "18":
+
+        try:
+            angle = get_number("\nEnter Angle (Degrees) : ")
+
+            result = cosine(angle)
+
+            print("\n" + "=" * 40)
+            print(f"cos({angle}°) = {result:.6f}")
+            print("=" * 40)
+
+            save_history(
+                "Cosine",
+                f"cos({angle})",
+                round(result, 6)
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+
+    # Tangent
+    elif choice == "19":
+
+        try:
+            angle = get_number("\nEnter Angle (Degrees) : ")
+
+            result = tangent(angle)
+
+            print("\n" + "=" * 40)
+            print(f"tan({angle}°) = {result:.6f}")
+            print("=" * 40)
+
+            save_history(
+                "Tangent",
+                f"tan({angle})",
+                round(result, 6)
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+    
+        # Degree to Radian
+    elif choice == "20":
+
+        try:
+            angle = get_number("\nEnter Degrees : ")
+
+            result = degree_to_radian(angle)
+
+            print("\n" + "=" * 40)
+            print(f"{angle}° = {result:.6f} rad")
+            print("=" * 40)
+
+            save_history(
+                "Degree to Radian",
+                f"{angle}°",
+                round(result, 6)
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+    
+        # Radian to Degree
+    elif choice == "21":
+
+        try:
+            angle = get_number("\nEnter Radians : ")
+
+            result = radian_to_degree(angle)
+
+            print("\n" + "=" * 40)
+            print(f"{angle} rad = {result:.6f}°")
+            print("=" * 40)
+
+            save_history(
+                "Radian to Degree",
+                f"{angle} rad",
+                round(result, 6)
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+    
+    
+
     # Square Root
     elif choice == "10":
 

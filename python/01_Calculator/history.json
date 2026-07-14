@@ -10,5 +10,23 @@
         "operation": "Absolute",
         "expression": "|-25.0|",
         "result": 25.0
+    },
+    {
+        "time": "14-07-2026 12:03:27",
+        "operation": "Logarithm",
+        "expression": "log10(100.0)",
+        "result": 2.0
+    },
+    {
+        "time": "14-07-2026 12:11:34",
+        "operation": "Natural Log",
+        "expression": "ln(10.0)",
+        "result": 2.302585
+    },
+    {
+        "time": "14-07-2026 12:29:41",
+        "operation": "Sine",
+        "expression": "sin(30.0)",
+        "result": 0.5
     }
 ]
