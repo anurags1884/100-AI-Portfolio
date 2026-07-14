@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "time": "14-07-2026 06:57:03",
+        "operation": "Square Root",
+        "expression": "\u221a20.0",
+        "result": 4.47213595499958
+    }
+]

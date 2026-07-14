@@ -1,4 +1,20 @@
+from scientific import (
+    square_root,
+    cube_root,
+    percentage,
+    factorial,
+    absolute,
+    logarithm,
+    natural_log,
+    sine,
+    cosine,
+    tangent,
+    degree_to_radian,
+    radian_to_degree
+)
+
 from constants import APP_NAME, VERSION, MENU
+
 from operations import (
     add,
     subtract,
@@ -8,8 +24,10 @@ from operations import (
     power,
     floor_division
 )
+
 from validator import get_number
 from history import save_history, show_history, clear_history
+
 
 print("=" * 60)
 print(APP_NAME.center(60))
@@ -20,27 +38,63 @@ while True:
 
     print(MENU)
 
-    choice = input("Enter your choice (0-9): ").strip()
+    choice = input("Enter your choice (0-21): ").strip()
 
+    # Exit
     if choice == "0":
         print("\nThank you for using the calculator.")
         break
 
+    # View History
     elif choice == "8":
         show_history()
         input("\nPress Enter to continue...")
         continue
 
+    # Clear History
     elif choice == "9":
         clear_history()
         input("\nPress Enter to continue...")
         continue
 
-    elif choice not in ["1", "2", "3", "4", "5", "6", "7"]:
+    # Square Root
+    elif choice == "10":
+
+        try:
+            number = get_number("\nEnter Number : ")
+
+            result = square_root(number)
+
+            print("\n" + "=" * 40)
+            print(f"√{number} = {result}")
+            print("=" * 40)
+
+            save_history(
+                "Square Root",
+                f"√{number}",
+                result
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+
+    # Invalid Choice
+    elif choice not in [
+        "1", "2", "3", "4", "5", "6", "7",
+        "8", "9",
+        "10", "11", "12", "13", "14",
+        "15", "16", "17", "18", "19",
+        "20", "21"
+    ]:
+
         print("\n❌ Invalid Choice")
         input("\nPress Enter to continue...")
         continue
 
+    # Basic Calculator
     num1 = get_number("\nEnter First Number : ")
     num2 = get_number("Enter Second Number : ")
 
@@ -80,7 +134,11 @@ while True:
         print(f"Result : {expression} = {result}")
         print("=" * 40)
 
-        save_history(symbol, expression, result)
+        save_history(
+            symbol,
+            expression,
+            result
+        )
 
     except Exception as e:
         print("\nError :", e)
