@@ -57,6 +57,104 @@ while True:
         input("\nPress Enter to continue...")
         continue
 
+    # Cube Root
+    elif choice == "11":
+
+        try:
+            number = get_number("\nEnter Number : ")
+
+            result = cube_root(number)
+
+            print("\n" + "=" * 40)
+            print(f"∛{number} = {result}")
+            print("=" * 40)
+
+            save_history(
+                "Cube Root",
+                f"∛{number}",
+                result
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+
+    # Percentage
+    elif choice == "12":
+
+        try:
+            print("\nPercentage Calculator")
+            value = get_number("Enter Value : ")
+            total = get_number("Enter Total : ")
+
+            result = percentage(value, total)
+
+            print("\n" + "=" * 40)
+            print(f"{value} is {result:.2f}% of {total}")
+            print("=" * 40)
+
+            save_history(
+                "Percentage",
+                f"{value}/{total} × 100",
+                f"{result:.2f}%"
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+
+    # Factorial
+    elif choice == "13":
+
+        try:
+            number = get_number("\nEnter Whole Number : ")
+
+            result = factorial(number)
+
+            print("\n" + "=" * 40)
+            print(f"{int(number)}! = {result}")
+            print("=" * 40)
+
+            save_history(
+                "Factorial",
+                f"{int(number)}!",
+                result
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+
+    # Absolute Value
+    elif choice == "14":
+
+        try:
+            number = get_number("\nEnter Number : ")
+
+            result = absolute(number)
+
+            print("\n" + "=" * 40)
+            print(f"|{number}| = {result}")
+            print("=" * 40)
+
+            save_history(
+                "Absolute",
+                f"|{number}|",
+                result
+            )
+
+        except Exception as e:
+            print("\nError :", e)
+
+        input("\nPress Enter to continue...")
+        continue
+
     # Square Root
     elif choice == "10":
 

@@ -1,8 +1,14 @@
 [
     {
-        "time": "14-07-2026 06:57:03",
-        "operation": "Square Root",
-        "expression": "\u221a20.0",
-        "result": 4.47213595499958
+        "time": "14-07-2026 11:45:26",
+        "operation": "Factorial",
+        "expression": "5!",
+        "result": 120
+    },
+    {
+        "time": "14-07-2026 11:48:27",
+        "operation": "Absolute",
+        "expression": "|-25.0|",
+        "result": 25.0
     }
 ]
